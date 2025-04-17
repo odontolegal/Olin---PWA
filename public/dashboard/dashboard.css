@@ -1,0 +1,51 @@
+/* ================================
+   4. Main Content e Dashboard
+   ================================ */
+
+.main-content {
+  margin-left: 220px; /* Espaço para a sidebar fixa */
+  padding: var(--spacing-md);
+  min-height: 100vh;
+}
+
+/* Cabeçalho interno do dashboard (título, breadcrumbs etc.) */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Cards e Seções do Dashboard */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex: 1 1 300px; /* Define largura flexível */
+  min-width: 300px;
+}
+
+.card h3 {
+  margin-bottom: var(--spacing-sm);
+  font-weight: bold;
+}
+
+/* Controla o tamanho do gráfico */
+#graficoCasos {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+/* Impede quebra de linha forçada em qualquer um dos itens */
+header .text-muted {
+  white-space: nowrap;
+}

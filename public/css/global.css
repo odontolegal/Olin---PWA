@@ -1,0 +1,246 @@
+/* ================================
+   1. Reset e Variáveis de Cores
+   ================================ */
+
+:root {
+  /* Cores principais do projeto */
+  --color-primary: #0d6efd;
+  --color-primary-hover: #0b5ed7;
+  --color-bg: #f8f9fa; /* Fundo geral */
+  --color-bg-sidebar: #fff; /* Fundo do menu lateral */
+  --color-text: #333;
+  --color-border: #ddd;
+  --color-notification-bg: #e7f3ff;
+  --color-notification-text: #084298;
+
+  /* Espaçamentos e radius */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --border-radius: 0.5rem;
+}
+
+/* Reset básico para garantir consistência de margens e paddings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e estilo de body */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ================================
+   2. Layout Geral e Navbar
+   ================================ */
+
+/* Classe utilitária para um container centralizado e com limite de largura */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ================================
+   Estilo do campo de busca
+   ================================ */
+.custom-search {
+  width: 250px;
+  max-width: 300px;
+  flex-shrink: 0;
+  background-color: #f8f9fc;
+  border: 1px solid #3b82f6;
+  border-radius: 12px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.custom-search .form-control {
+  height: 32px;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+.custom-search .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-search .input-group-text {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  height: 32px;
+  padding: 4px 8px;
+}
+
+/* 👤 Informações do usuário */
+.header-right,
+.user-info {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.user-info span,
+.user-info i {
+  display: inline;
+}
+
+/* ================================
+   3. Sidebar (Menu Lateral)
+   ================================ */
+
+.sidebar {
+  background-color: #1e1e2f;
+  min-height: 100vh;
+  padding-top: 20px;
+  color: white;
+}
+
+/* Marcação em azul no menu lateral quando selecionado */
+.nav-link.active {
+  background-color: #007bff; /* Azul do Bootstrap */
+  color: white !important;
+  border-radius: 0.375rem;
+}
+
+/* ================================
+   5. Notificações e Status
+   ================================ */
+
+/* Notificações em destaque */
+.notifications {
+  background-color: var(--color-notification-bg);
+  color: var(--color-notification-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.notification-item {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Estilos para status, como 'Finalizado', 'Em andamento', etc. */
+/* Cores customizadas para os status */
+.bg-orange {
+  background-color: #fd7e14 !important;
+}
+
+/* Impede quebra de linha forçada em qualquer um dos itens */
+header .text-muted {
+  white-space: nowrap;
+}
+
+/* =====================================
+   Tabela com visual limpo e moderno
+   ===================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem; /* Espaço inferior entre tabelas e outros elementos */
+  background-color: #fff; /* Garante fundo branco para a tabela */
+}
+
+table thead th {
+  background-color: transparent; /* Sem fundo colorido para o cabeçalho */
+  color: #333; /* Cor do texto */
+  text-align: left;
+  font-weight: 600; /* Negrito nos títulos */
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-bottom: 2px solid #ddd; /* Linha mais grossa para separar o cabeçalho */
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd; /* Linha divisória suave entre as linhas */
+}
+
+table tbody tr:last-child {
+  border-bottom: none; /* Remove a borda da última linha */
+}
+
+table tbody td {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Efeito hover para realçar a linha da tabela */
+table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* =====================================
+     Estilo das "bolinhas" de status
+     ===================================== */
+.status-dot {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.status-dot.green {
+  background-color: #28a745; /* Verde */
+}
+
+.status-dot.yellow {
+  background-color: #ffc107; /* Amarelo */
+}
+
+.status-dot.blue {
+  background-color: #007bff; /* Azul */
+}
+
+/* (Opcional) Alternar fundo para linhas pares */
+table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* ================================
+   7. Responsividade
+   ================================ */
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Classe que podemos ativar via JS para abrir o menu */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: var(--spacing-md);
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+  }
+}

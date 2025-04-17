@@ -1,0 +1,84 @@
+/* === Container principal do formulário === */
+main {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* === Cabeçalho do formulário === */
+main h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* === Caixas do formulário e detalhamento === */
+.bg-light {
+  background-color: #ffffff !important;
+  border: 1px solid #dee2e6;
+}
+
+/* === Campos de input/textarea === */
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ced4da;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+/* === Labels === */
+.form-label {
+  font-weight: 500;
+  color: #495057;
+}
+
+/* === Blocos de Anexos (fake) === */
+.bg-secondary-subtle {
+  background-color: #e9ecef !important;
+  border: 1px dashed #adb5bd;
+}
+
+/* === Botões redondinhos e bonitos === */
+.btn {
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #5b2a86;
+  border-color: #5b2a86;
+}
+
+.btn-primary:hover {
+  background-color: #491f6b;
+  border-color: #491f6b;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-success {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+/* === Detalhamento do Caso === */
+.fst-italic {
+  font-size: 0.95rem;
+}
+
+/* === RODAPÉ === */
+footer {
+  font-size: 0.8rem;
+  color: #777;
+  padding: 20px 0;
+  border-top: 1px solid #dee2e6;
+}
+
+footer nav a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
