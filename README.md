@@ -9,7 +9,7 @@ API Odonto Legal configurada e rodando
 
 🚀 Instalação
 bash# Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone (https://github.com/odontolegal/Olin---PWA.git)
 
 # Acesse o diretório
 cd Olin---PWA
