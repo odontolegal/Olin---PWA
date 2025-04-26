@@ -1,5 +1,5 @@
-✨ Olin - Plataforma PWA
-Aplicação PWA para gerenciar casos, evidências, laudos e ajustes, com suporte offline e integração à API Odonto Legal.
+## ✨ Olin - Plataforma PWA
+# Aplicação PWA para gerenciar casos, evidências, laudos e ajustes, com suporte offline e integração à API Odonto Legal.
 ⚙️ Pré-requisitos
 
 Node.js >= 16.x
@@ -8,7 +8,7 @@ Editor de código (VS Code sugerido)
 API Odonto Legal configurada e rodando
 
 🚀 Instalação
-bash# Clone o repositório
+bash Clone o repositório
 git clone (https://github.com/odontolegal/Olin---PWA.git)
 
 # Acesse o diretório
