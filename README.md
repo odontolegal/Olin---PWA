@@ -8,7 +8,7 @@ Editor de código (VS Code sugerido)
 API Odonto Legal configurada e rodando
 
 
-🚀 Instalação
+## 🚀 Instalação
 bash Clone o repositório
 git clone (https://github.com/odontolegal/Olin---PWA.git)
 
@@ -68,13 +68,13 @@ Autenticação e autorização de usuários
 ComandoFunçãonpm run startInicia o projeto em modo de desenvolvimentonpm run buildGera uma versão otimizada para produçãonpm run lintVerifica formatação de código (se configurado)
 
 
-##🛠️ Tecnologias Utilizadas
+#🛠️ Tecnologias Utilizadas
 
 
-# HTML5, CSS3, JavaScript
-# PWA Features (Service Workers e suporte offline)
-# Axios para requisições HTTP
-# LocalStorage e IndexedDB (em implementação)
+ HTML5, CSS3, JavaScript
+ PWA Features (Service Workers e suporte offline)
+ Axios para requisições HTTP
+ LocalStorage e IndexedDB (em implementação)
 
 
-## 📢 Observação: Este projeto está em constante evolução!
+# 📢 Observação: Este projeto está em constante evolução!
