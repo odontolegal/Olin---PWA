@@ -1,17 +1,18 @@
-**Olin - Plataforma PWA**
-*Descrição:*
-Aplicação Progressive Web App (PWA) desenvolvida para gerenciar casos, evidências, laudos e ajustes em ambiente web, com suporte offline e integração à API do Odonto Legal.
 
-*Pré-requisitos*
+###✨ Olin - Plataforma PWA###
+##📋 Descrição##
+Aplicação PWA para gerenciar casos, evidências, laudos e ajustes, com suporte offline e integração à API Odonto Legal.
+
+#⚙️ Pré-requisitos#
 Node.js >= 16.x
 
-**NPM ou Yarn**
+NPM ou Yarn
 
-Editor de código (sugestão: VS Code)
+Editor de código (VS Code sugerido)
 
-*API Odonto Legal configurada e rodando (necessário URL da API)*
+API Odonto Legal configurada e rodando (informar URL)
 
-**Instalação**
+##🚀 Instalação##
 Clone o repositório:
 
 bash
@@ -24,24 +25,20 @@ bash
 Copiar
 Editar
 cd Olin---PWA
-Instale as dependências ():
+Instale as dependências:
 
 bash
 Copiar
 Editar
 npm install
-ou
-
-bash
-Copiar
-Editar
+# ou
 yarn
-Estrutura de Pastas
+📂 Estrutura de Pastas
 /public
 
 casos/ – Cadastro e visualização de casos
 
-dashboard/ – Painel principal da plataforma
+dashboard/ – Painel principal
 
 evidencias/ – Upload de evidências
 
@@ -49,53 +46,42 @@ historico/ – Histórico de casos
 
 laudos/ – Geração de laudos
 
-ajustes/ – Página de ajustes e configurações
+ajustes/ – Configurações
 
 /js
 
-controllers/ – Controladores de fluxo de dados
+controllers/ – Controladores
 
-services/ – Serviços de comunicação com a API (ex: api.js, auth.js, etc.)
+services/ – Comunicação com API (ex: api.js, auth.js)
 
-app.js – Arquivo principal de inicialização do app
+#app.js – Inicialização do app#
 
-**Como Rodar o Projeto**
-Rode o servidor de desenvolvimento:
+##🛠️ Rodando o Projeto##
+Servidor de desenvolvimento:
 
 bash
 Copiar
 Editar
 npm run start
-ou
-
-bash
-Copiar
-Editar
+# ou
 yarn start
 Acesse no navegador:
 
-bash
+arduino
 Copiar
 Editar
-*http://localhost:3000*
-(A porta pode variar dependendo do seu setup. Ajuste conforme necessário.)
+http://localhost:3000
+(Ajuste a porta se necessário.)
 
-*Conexão com a API*
-A comunicação com a API é realizada principalmente via services/api.js e services/auth.js.
-Certifique-se de alterar a URL base da API conforme seu ambiente de desenvolvimento.
-
-Exemplo no api.js:
+##🔗 Conexão com a API##
+Configure a URL da API em services/api.js:
 
 javascript
 Copiar
 Editar
-const API_BASE_URL = "http://localhost:3333"; // URL da API Odonto Legal
-Para produção, basta atualizar essa URL para o endpoint da API hospedada.
-
-**Funcionalidades Principais**
-Cadastro de casos
-
-Visualização de banco de casos
+const API_BASE_URL = "http://localhost:3333"; // Altere conforme seu ambiente
+##✨ Funcionalidades##
+Cadastro e visualização de casos
 
 Upload de evidências
 
@@ -107,30 +93,21 @@ Histórico de atividades
 
 Autenticação e autorização de usuários
 
-*Scripts Importantes*
+📜 Scripts Importantes
 
-Comando	Descrição
+Comando	Função
 npm run start	Inicia o projeto em modo de desenvolvimento
 npm run build	Gera uma versão otimizada para produção
-npm run lint	Verifica problemas de formatação no código (se configurado)
-Tecnologias Utilizadas
+npm run lint	Verifica formatação de código (se configurado)
+🛠️ Tecnologias Utilizadas
 HTML5, CSS3, JavaScript
 
-PWA (Progressive Web App) Features
+PWA Features (Service Workers e suporte offline)
 
 Axios para requisições HTTP
 
-Service Workers para suporte offline
+(Em breve) LocalStorage e IndexedDB
 
-LocalStorage e IndexedDB (em breve)
+📢 Observações
+Este projeto está em constante evolução!
 
-*Observações*
-Este projeto está em desenvolvimento constante. Novas funcionalidades estão sendo planejadas, como:
-
-Modo dark
-
-Melhorias de acessibilidade (WCAG)
-
-Cache de páginas com Workbox
-
-Caso encontre algum bug ou deseje sugerir melhorias, sinta-se à vontade para abrir uma iss
