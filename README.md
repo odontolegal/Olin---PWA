@@ -37,12 +37,9 @@ services/ – Comunicação com API
 app.js – Inicialização do app
 
 
-
 🛠️ Rodando o Projeto
 bash# Servidor de desenvolvimento
 npm run start
-# ou
-yarn start
 Acesse no navegador: http://localhost:3000
 🔗 Conexão com a API
 Configure a URL da API em services/api.js:
