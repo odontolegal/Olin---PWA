@@ -1,113 +1,69 @@
-
-###✨ Olin - Plataforma PWA###
-##📋 Descrição##
+✨ Olin - Plataforma PWA
 Aplicação PWA para gerenciar casos, evidências, laudos e ajustes, com suporte offline e integração à API Odonto Legal.
+⚙️ Pré-requisitos
 
-#⚙️ Pré-requisitos#
 Node.js >= 16.x
-
 NPM ou Yarn
-
 Editor de código (VS Code sugerido)
+API Odonto Legal configurada e rodando
 
-API Odonto Legal configurada e rodando (informar URL)
-
-##🚀 Instalação##
-Clone o repositório:
-
-bash
-Copiar
-Editar
+🚀 Instalação
+bash# Clone o repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
-Acesse o diretório:
 
-bash
-Copiar
-Editar
+# Acesse o diretório
 cd Olin---PWA
-Instale as dependências:
 
-bash
-Copiar
-Editar
+# Instale as dependências
 npm install
 # ou
 yarn
 📂 Estrutura de Pastas
+
 /public
 
 casos/ – Cadastro e visualização de casos
-
 dashboard/ – Painel principal
-
 evidencias/ – Upload de evidências
-
 historico/ – Histórico de casos
-
 laudos/ – Geração de laudos
-
 ajustes/ – Configurações
+
 
 /js
 
 controllers/ – Controladores
+services/ – Comunicação com API
+app.js – Inicialização do app
 
-services/ – Comunicação com API (ex: api.js, auth.js)
 
-#app.js – Inicialização do app#
 
-##🛠️ Rodando o Projeto##
-Servidor de desenvolvimento:
-
-bash
-Copiar
-Editar
+🛠️ Rodando o Projeto
+bash# Servidor de desenvolvimento
 npm run start
 # ou
 yarn start
-Acesse no navegador:
-
-arduino
-Copiar
-Editar
-http://localhost:3000
-(Ajuste a porta se necessário.)
-
-##🔗 Conexão com a API##
+Acesse no navegador: http://localhost:3000
+🔗 Conexão com a API
 Configure a URL da API em services/api.js:
+javascriptconst API_BASE_URL = "http://localhost:3333"; // Altere conforme seu ambiente
+✨ Funcionalidades
 
-javascript
-Copiar
-Editar
-const API_BASE_URL = "http://localhost:3333"; // Altere conforme seu ambiente
-##✨ Funcionalidades##
 Cadastro e visualização de casos
-
 Upload de evidências
-
 Geração de laudos em PDF
-
 Dashboard de acompanhamento
-
 Histórico de atividades
-
 Autenticação e autorização de usuários
 
 📜 Scripts Importantes
-
-Comando	Função
-npm run start	Inicia o projeto em modo de desenvolvimento
-npm run build	Gera uma versão otimizada para produção
-npm run lint	Verifica formatação de código (se configurado)
+ComandoFunçãonpm run startInicia o projeto em modo de desenvolvimentonpm run buildGera uma versão otimizada para produçãonpm run lintVerifica formatação de código (se configurado)
 🛠️ Tecnologias Utilizadas
+
 HTML5, CSS3, JavaScript
-
 PWA Features (Service Workers e suporte offline)
-
 Axios para requisições HTTP
+LocalStorage e IndexedDB (em implementação)
 
-(Em breve) LocalStorage e IndexedDB
 
-📢 Observações
-Este projeto está em constante evolução!
-
+📢 Observação: Este projeto está em constante evolução!
