@@ -1,4 +1,3 @@
-Documentação do PWA Odonto Legal
 ✨ Olin - Plataforma PWA
 Aplicação PWA para gerenciar casos, evidências, laudos e ajustes, com suporte offline e integração à API Odonto Legal.
 ⚙️ Pré-requisitos
